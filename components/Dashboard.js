@@ -15,8 +15,6 @@ const Dashboard = () => {
     const [form, setform] = useState({});
 
     useEffect(() => {
-        console.log(session);
-
         if (!session) {
             router.push('/login');
         }
@@ -35,9 +33,8 @@ const Dashboard = () => {
     }
 
     const handleSubmit = async (e) => {
+        let a = await updateProfile(e, session.user.name);
 
-        console.log(form);
-        let a = await updateProfile(e, session.user.name)
         toast('Profile Updated', {
             position: "top-right",
             autoClose: 5000,
