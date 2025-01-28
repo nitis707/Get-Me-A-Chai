@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Home() {
@@ -13,8 +14,8 @@ export default function Home() {
         </p>
 
         <div>
-          <button type="button" className="btns">Start here</button>
-          <button type="button" className="btns">Read More</button>
+          <Link href={"/login"}><button type="button" className="btns">Start Here</button></Link>
+          <Link href={`/about`}><button type="button" className="btns">Read More</button></Link>
         </div>
       </div>
 

@@ -9,7 +9,6 @@ const page = () => {
 
     useEffect(() => {
         document.title = "Login - Get Me A Chai";
-        console.log(session);
         if (session) {
             router.push("/dashboard");
         }
@@ -18,7 +17,7 @@ const page = () => {
 
     return (
         <div className="text-white py-14 container mx-auto">
-            <h1 className="font-bold text-center text-3xl">Login to Get your fans to support you</h1>
+            <h1 className="font-bold text-center text-3xl">Login to Get Started!</h1>
 
             <div className="social-login-buttons flex justify-center mt-10">
                 <div className="flex flex-col gap-2 p-10 rounded">

@@ -112,11 +112,11 @@ const PaymentPage = ({ username }) => {
                     {username}
                 </div>
                 <div className="text-slate-300">
-                    Creating Animated Art for VTT's
+                    Lets help {username} to get a chai!
                 </div>
 
                 <div className="text-slate-300">
-                    9,719 members, 82 posts, $15,450/release
+                    {payments.length} Payments | ₹{payments.reduce((a, b) => a + b.amount, 0)} raised
                 </div>
             </div>
 

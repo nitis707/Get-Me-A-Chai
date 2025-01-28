@@ -42,7 +42,6 @@ export const fetchpayments = async (username) => {
 
         const payments = await Payment.find({ to_user: username, done: true })
             .sort({ amount: -1 })
-            .limit(10)
             .lean();
 
         // Transform `_id` and `createdAt` to plain values

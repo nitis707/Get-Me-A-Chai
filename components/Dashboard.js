@@ -49,6 +49,9 @@ const Dashboard = () => {
             theme: "light",
             transition: Bounce,
         });
+
+        // router.refresh();
+        await update();
     }
 
     return (
